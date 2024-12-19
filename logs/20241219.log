@@ -1,0 +1,374 @@
+Dec.-19 02:08:32.699 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/bacass -r 2.4.0 -c nextflow.config -profile singularity,test_long --assembler canu --assembly_type long --kraken2db /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/DATABASES/minikraken2_v2_8GB_201904_UPDATE.tar.gz --kmerfinderdb /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/DATABASES/bacteria.tar.gz --ncbi_assembly_metadata /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/ASSEMBLY-REPORTS/assembly_summary_refseq.txt --skip_kraken2 false --skip_kmerfinder false --outdir outputs/20241218_15-KSA-samples__bacassv2.4.0__test_long__dont-skip-kraken2-and-kmerfinder__minikrakendb_set-assembler-to-canu
+Dec.-19 02:08:32.846 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Dec.-19 02:08:32.868 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/pampum/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Dec.-19 02:08:32.881 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Dec.-19 02:08:32.882 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Dec.-19 02:08:32.885 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Dec.-19 02:08:32.899 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Dec.-19 02:08:32.914 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/pampum/.nextflow/scm
+Dec.-19 02:08:33.985 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/pampum/.nextflow/assets/nf-core/bacass/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/bacass.git
+Dec.-19 02:08:34.036 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Dec.-19 02:08:34.047 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/pampum/.nextflow/assets/nf-core/bacass/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/bacass.git
+Dec.-19 02:08:35.088 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/pampum/.nextflow/assets/nf-core/bacass/nextflow.config
+Dec.-19 02:08:35.091 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/nextflow.config
+Dec.-19 02:08:35.095 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/nextflow.config
+Dec.-19 02:08:35.096 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/pampum/.nextflow/assets/nf-core/bacass/nextflow.config
+Dec.-19 02:08:35.097 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/nextflow.config
+Dec.-19 02:08:35.107 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/nextflow.config
+Dec.-19 02:08:35.119 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/pampum/.nextflow/secrets/store.json
+Dec.-19 02:08:35.122 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@68b11545] - activable => nextflow.secret.LocalSecretsProvider@68b11545
+Dec.-19 02:08:35.136 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity,test_long`
+Dec.-19 02:08:36.494 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity,test_long`
+Dec.-19 02:08:36.509 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity,test_long`
+Dec.-19 02:08:36.515 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, giga, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, ccga_med, tes, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, ceci_nic5, stjude, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, arm, test_dfast, munin, rosalind, hasta, cfc, uzh, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, test_hybrid, crick, ku_sund_danhead, marvin, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, genotoul, nci_gadi, abims, test_long_dragonflye, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, test_long, computerome, ucd_sonic, seg_globe, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, nygc, fgcz, conda, crg, singularity, mpcdf_viper, pe2, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, test_hybrid_dragonflye, test_long_miniasm, genouest, cbe, unsw_katana, gitpod, phoenix, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
+Dec.-19 02:08:36.549 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Dec.-19 02:08:36.549 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/bacass` [grave_lamarck] DSL2 - revision: be9c064f57 [2.4.0]
+Dec.-19 02:08:36.551 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.1.1]
+Dec.-19 02:08:36.551 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Dec.-19 02:08:36.551 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.1.1]
+Dec.-19 02:08:36.551 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.1.1
+Dec.-19 02:08:36.561 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.1.1' resolved
+Dec.-19 02:08:36.561 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.1.1'
+Dec.-19 02:08:36.569 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.1.1
+Dec.-19 02:08:36.686 [main] DEBUG nextflow.Session - Session UUID: 5805965e-10f3-42aa-a586-fbde7eea55a7
+Dec.-19 02:08:36.686 [main] DEBUG nextflow.Session - Run name: grave_lamarck
+Dec.-19 02:08:36.686 [main] DEBUG nextflow.Session - Executor pool size: 40
+Dec.-19 02:08:36.694 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Dec.-19 02:08:36.698 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=120; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Dec.-19 02:08:36.717 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (10:05 ADT)
+  System: Linux 5.14.0-427.20.1.el9_4.0.1.x86_64
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 17.0.13-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 1276779@login509-02-l [10.109.65.7]
+  CPUs: 40 - Mem: 376.6 GB (9.9 GB) - Swap: 0 (0)
+Dec.-19 02:08:36.746 [main] DEBUG nextflow.Session - Work-dir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work [UNKNOWN (0x18031977)]
+Dec.-19 02:08:36.793 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Dec.-19 02:08:36.804 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Dec.-19 02:08:36.871 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Dec.-19 02:08:36.881 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 41; maxThreads: 1000
+Dec.-19 02:08:36.973 [main] DEBUG nextflow.Session - Session start
+Dec.-19 02:08:36.976 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/outputs/20241218_15-KSA-samples__bacassv2.4.0__test_long__dont-skip-kraken2-and-kmerfinder__minikrakendb_set-assembler-to-canu/pipeline_info/execution_trace_2024-12-19_02-08-36.txt
+Dec.-19 02:08:37.114 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Dec.-19 02:08:40.297 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Dec.-19 02:08:40.611 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Dec.-19 02:08:40.612 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Dec.-19 02:08:40.615 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Dec.-19 02:08:40.616 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Dec.-19 02:08:40.916 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Dec.-19 02:08:40.917 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Dec.-19 02:08:40.920 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Dec.-19 02:08:40.920 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Dec.-19 02:08:41.105 [main] INFO  nextflow.Nextflow - 
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/bacass 2.4.0[0m
+-[2m----------------------------------------------------[0m-
+[1mInput/output options[0m
+  [0;34minput                     : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/bacass/bacass_long_miniasm.tsv[0m
+  [0;34moutdir                    : [0;32moutputs/20241218_15-KSA-samples__bacassv2.4.0__test_long__dont-skip-kraken2-and-kmerfinder__minikrakendb_set-assembler-to-canu[0m
+
+[1mContamination Screening[0m
+  [0;34mkraken2db                 : [0;32m/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/DATABASES/minikraken2_v2_8GB_201904_UPDATE.tar.gz[0m
+  [0;34mkmerfinderdb              : [0;32m/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/DATABASES/bacteria.tar.gz[0m
+  [0;34mncbi_assembly_metadata    : [0;32m/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/ASSEMBLY-REPORTS/assembly_summary_refseq.txt[0m
+
+[1mAssembly parameters[0m
+  [0;34massembler                 : [0;32mcanu[0m
+  [0;34massembly_type             : [0;32mlong[0m
+  [0;34mcanu_mode                 : [0;32m-nanopore[0m
+
+[1mAnnotation[0m
+  [0;34mprokka_args               : [0;32m --fast[0m
+  [0;34mdfast_config              : [0;32m/home/pampum/.nextflow/assets/nf-core/bacass/assets/test_config_dfast.py[0m
+
+[1mSkipping Options[0m
+  [0;34mskip_polish               : [0;32mtrue[0m
+
+[1mInstitutional config options[0m
+  [0;34mconfig_profile_name       : [0;32mTest_long profile[0m
+  [0;34mconfig_profile_description: [0;32mMinimal test dataset to check pipeline function[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrevision                  : [0;32m2.4.0[0m
+  [0;34mrunName                   : [0;32mgrave_lamarck[0m
+  [0;34mcontainerEngine           : [0;32msingularity[0m
+  [0;34mlaunchDir                 : [0;32m/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies[0m
+  [0;34mworkDir                   : [0;32m/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work[0m
+  [0;34mprojectDir                : [0;32m/home/pampum/.nextflow/assets/nf-core/bacass[0m
+  [0;34muserName                  : [0;32mpampum[0m
+  [0;34mprofile                   : [0;32msingularity,test_long[0m
+  [0;34mconfigFiles               : [0;32m[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-* The pipeline
+  https://doi.org/10.5281/zenodo.2669428
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/bacass/blob/master/CITATIONS.md
+
+Dec.-19 02:08:41.108 [main] DEBUG nextflow.validation.SchemaValidator - Starting parameters validation
+Dec.-19 02:08:41.710 [main] DEBUG nextflow.validation.SchemaEvaluator - Started validating /nf-core/test-datasets/bacass/bacass_long_miniasm.tsv
+Dec.-19 02:08:42.011 [main] DEBUG nextflow.validation.SchemaEvaluator - Validation of file 'https://raw.githubusercontent.com/nf-core/test-datasets/bacass/bacass_long_miniasm.tsv' passed!
+Dec.-19 02:08:42.314 [main] DEBUG nextflow.validation.SchemaValidator - Finishing parameters validation
+Dec.-19 02:08:43.024 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BACASS:BACASS:CAT_FASTQ
+Dec.-19 02:08:43.034 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.035 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.044 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Dec.-19 02:08:43.049 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Dec.-19 02:08:43.050 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Dec.-19 02:08:43.052 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Dec.-19 02:08:43.107 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BACASS:BACASS:NANOPLOT
+Dec.-19 02:08:43.108 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NANOPLOT` matches process NFCORE_BACASS:BACASS:NANOPLOT
+Dec.-19 02:08:43.113 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.113 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.124 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BACASS:BACASS:PYCOQC
+Dec.-19 02:08:43.125 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PYCOQC` matches process NFCORE_BACASS:BACASS:PYCOQC
+Dec.-19 02:08:43.130 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.130 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.140 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BACASS:BACASS:PORECHOP_PORECHOP
+Dec.-19 02:08:43.140 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PORECHOP_PORECHOP` matches process NFCORE_BACASS:BACASS:PORECHOP_PORECHOP
+Dec.-19 02:08:43.143 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.143 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.162 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_BACASS:BACASS:CANU
+Dec.-19 02:08:43.163 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CANU` matches process NFCORE_BACASS:BACASS:CANU
+Dec.-19 02:08:43.166 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.166 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.187 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_BACASS:BACASS:MEDAKA
+Dec.-19 02:08:43.187 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MEDAKA` matches process NFCORE_BACASS:BACASS:MEDAKA
+Dec.-19 02:08:43.189 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.189 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.199 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION
+Dec.-19 02:08:43.202 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.202 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.217 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_BACASS:BACASS:KRAKEN2
+Dec.-19 02:08:43.218 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:KRAKEN2` matches process NFCORE_BACASS:BACASS:KRAKEN2
+Dec.-19 02:08:43.221 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.221 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.234 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_BACASS:BACASS:KRAKEN2_LONG
+Dec.-19 02:08:43.236 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:KRAKEN2_LONG` matches process NFCORE_BACASS:BACASS:KRAKEN2_LONG
+Dec.-19 02:08:43.239 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.239 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.258 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR
+Dec.-19 02:08:43.262 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.262 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.281 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:KMERFINDER
+Dec.-19 02:08:43.282 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:.*:KMERFINDER_SUBWORKFLOW:KMERFINDER` matches process NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:KMERFINDER
+Dec.-19 02:08:43.284 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.285 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.297 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:KMERFINDER_SUMMARY
+Dec.-19 02:08:43.299 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:.*:KMERFINDER_SUBWORKFLOW:KMERFINDER_SUMMARY` matches process NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:KMERFINDER_SUMMARY
+Dec.-19 02:08:43.300 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.301 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.322 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:FIND_DOWNLOAD_REFERENCE
+Dec.-19 02:08:43.326 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.326 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.355 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BACASS:BACASS:QUAST
+Dec.-19 02:08:43.356 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QUAST|QUAST_BYREFSEQID` matches process NFCORE_BACASS:BACASS:QUAST
+Dec.-19 02:08:43.360 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.360 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.373 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BACASS:BACASS:QUAST_BYREFSEQID
+Dec.-19 02:08:43.374 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QUAST|QUAST_BYREFSEQID` matches process NFCORE_BACASS:BACASS:QUAST_BYREFSEQID
+Dec.-19 02:08:43.374 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QUAST|QUAST_BYREFSEQID` matches process NFCORE_BACASS:BACASS:QUAST_BYREFSEQID
+Dec.-19 02:08:43.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.377 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.392 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BACASS:BACASS:GUNZIP
+Dec.-19 02:08:43.396 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.396 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.415 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BACASS:BACASS:PROKKA
+Dec.-19 02:08:43.416 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PROKKA` matches process NFCORE_BACASS:BACASS:PROKKA
+Dec.-19 02:08:43.420 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.420 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.535 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BACASS:BACASS:MULTIQC_CUSTOM
+Dec.-19 02:08:43.536 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC_CUSTOM` matches process NFCORE_BACASS:BACASS:MULTIQC_CUSTOM
+Dec.-19 02:08:43.538 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Dec.-19 02:08:43.538 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Dec.-19 02:08:43.562 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Dec.-19 02:08:43.564 [main] DEBUG nextflow.Session - Igniting dataflow network (41)
+Dec.-19 02:08:43.564 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:CAT_FASTQ
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:NANOPLOT
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:PYCOQC
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:PORECHOP_PORECHOP
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:CANU
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:MEDAKA
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KRAKEN2
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KRAKEN2_LONG
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:KMERFINDER
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:KMERFINDER_SUMMARY
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:FIND_DOWNLOAD_REFERENCE
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:QUAST
+Dec.-19 02:08:43.565 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:QUAST_BYREFSEQID
+Dec.-19 02:08:43.566 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:GUNZIP
+Dec.-19 02:08:43.566 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:PROKKA
+Dec.-19 02:08:43.578 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BACASS:BACASS:MULTIQC_CUSTOM
+Dec.-19 02:08:43.580 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_4b979c6b08ea7be0: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/bakta_dbdownload_run.nf
+  Script_b666ee5b1a47ec88: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/minimap2/align/main.nf
+  Script_7b4deef9d813a9b8: /home/pampum/.nextflow/assets/nf-core/bacass/./subworkflows/local/utils_nfcore_bacass_pipeline/main.nf
+  Script_0ce72e734ad77725: /home/pampum/.nextflow/assets/nf-core/bacass/./subworkflows/local/utils_nfcore_bacass_pipeline/../../nf-core/utils_nextflow_pipeline/main.nf
+  Script_759dc90d68a2bc31: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/../../modules/local/kmerfinder_summary/main.nf
+  Script_215a636da7ab24a2: /home/pampum/.nextflow/assets/nf-core/bacass/./subworkflows/local/utils_nfcore_bacass_pipeline/../../nf-core/utils_nfschema_plugin/main.nf
+  Script_cdcbcf41b4f0e286: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/nanoplot/main.nf
+  Script_5415d117b10a0986: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/bacass.nf
+  Script_923c6c6ea5cce9e8: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/unicycler/main.nf
+  Script_0bbaa8ea833b1abe: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/porechop/porechop/main.nf
+  Script_d06311266caf9d14: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/local/medaka/main.nf
+  Script_a0f93b4a32030f55: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/nf-core/fastq_trim_fastp_fastqc/main.nf
+  Script_9892308df47cf9ae: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/samtools/sort/main.nf
+  Script_a40e3a23fa9445a8: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/local/pycoqc/main.nf
+  Script_bc4a2d120a8a17bc: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/kraken2/kraken2/main.nf
+  Script_6fbcf8477f9d7d4c: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  Script_e644fb6da94d4bab: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/../../modules/nf-core/untar/main.nf
+  Script_4ba798786ecd6418: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/fastqc/main.nf
+  Script_07dc9629fb0b74a6: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/samtools/index/main.nf
+  Script_f3aedb5fc77165b9: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/racon/main.nf
+  Script_d0681043cdd3b4fd: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/prokka/main.nf
+  Script_13768c8fee03b0e0: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/gunzip/main.nf
+  Script_ae2806eb3177461f: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/miniasm/main.nf
+  Script_17a8eab78a47311e: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/dragonflye/main.nf
+  Script_5f108d62a5477f8f: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/../../modules/nf-core/bakta/baktadbdownload/main.nf
+  Script_0c46f3221ef14a2f: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/local/dfast/main.nf
+  Script_12fa4284d6ee0a90: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/../../modules/local/find_download_reference.nf
+  Script_8b6f2bf5665f668d: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/../../modules/nf-core/bakta/bakta/main.nf
+  Script_c3797b75a7e32c5c: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/quast/main.nf
+  Script_5ef7fa158c817bca: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/canu/main.nf
+  Script_715d7825f145997a: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/../../modules/local/kmerfinder/main.nf
+  Script_f3d968f8997e6cb0: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/local/kraken2_db_preparation/main.nf
+  Script_d7fb2480385850e7: /home/pampum/.nextflow/assets/nf-core/bacass/main.nf
+  Script_4f1d4a2f57327fbd: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/local/nanopolish/main.nf
+  Script_4af32eb089fdfe11: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/local/kmerfinder_subworkflow.nf
+  Script_7bdb792340bdcbe3: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../subworkflows/nf-core/fastq_trim_fastp_fastqc/../../../modules/nf-core/fastp/main.nf
+  Script_386f240516308788: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/local/multiqc_custom.nf
+  Script_f0c9be7d13f120a6: /home/pampum/.nextflow/assets/nf-core/bacass/./workflows/../modules/nf-core/cat/fastq/main.nf
+Dec.-19 02:08:43.581 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Dec.-19 02:08:43.581 [main] DEBUG nextflow.Session - Session await
+Dec.-19 02:08:43.650 [Actor Thread 21] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.011 s; total time: 0.012 s
+Dec.-19 02:08:43.657 [Actor Thread 21] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/collect-file/da1acf9288193238c676dba24c872ba7
+Dec.-19 02:08:43.664 [Actor Thread 21] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-7810988197173630335
+Dec.-19 02:08:43.673 [Actor Thread 38] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/ubuntu:20.04; path=/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/singularity/depot.galaxyproject.org-singularity-ubuntu-20.04.img
+Dec.-19 02:08:43.887 [Actor Thread 22] DEBUG n.file.http.XFileSystemProvider - Remote redirect location: https://raw.githubusercontent.com/nf-core/test-datasets/bacass/nanopore/subset15000.fq.gz
+Dec.-19 02:08:43.914 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz) > jobId: 36529961; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/10/68d6df57bd082bfb78d3843d619b04
+Dec.-19 02:08:43.915 [Task submitter] INFO  nextflow.Session - [10/68d6df] Submitted process > NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz)
+Dec.-19 02:08:44.024 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (minikraken2_v2_8GB_201904_UPDATE) > jobId: 36529962; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/d9/c023658e326b8544e1af79574aa8b8
+Dec.-19 02:08:44.024 [Task submitter] INFO  nextflow.Session - [d9/c02365] Submitted process > NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (minikraken2_v2_8GB_201904_UPDATE)
+Dec.-19 02:08:44.046 [Actor Thread 19] DEBUG n.file.http.XFileSystemProvider - Remote redirect location: https://raw.githubusercontent.com/nf-core/test-datasets/bacass/nanopore/subset15000.fq.gz
+Dec.-19 02:08:44.277 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://github.com/nf-core/test-datasets/raw/bacass/nanopore/subset15000.fq.gz to work dir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/stage-5805965e-10f3-42aa-a586-fbde7eea55a7/3b/72ff6fda7932e5bd7014580aa59bdb/subset15000.fq.gz
+Dec.-19 02:08:44.358 [FileTransfer-1] DEBUG n.file.http.XFileSystemProvider - Remote redirect location: https://raw.githubusercontent.com/nf-core/test-datasets/bacass/nanopore/subset15000.fq.gz
+Dec.-19 02:08:44.655 [FileTransfer-1] DEBUG n.file.http.XFileSystemProvider - Remote redirect location: https://raw.githubusercontent.com/nf-core/test-datasets/bacass/nanopore/subset15000.fq.gz
+Dec.-19 02:08:46.115 [Actor Thread 27] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/nanoplot:1.41.6--pyhdfd78af_0; path=/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/singularity/depot.galaxyproject.org-singularity-nanoplot-1.41.6--pyhdfd78af_0.img
+Dec.-19 02:08:46.116 [Actor Thread 34] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/porechop:0.2.4--py39h7cff6ad_2; path=/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/singularity/depot.galaxyproject.org-singularity-porechop-0.2.4--py39h7cff6ad_2.img
+Dec.-19 02:08:46.273 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_BACASS:BACASS:NANOPLOT (TestMe) > jobId: 36529963; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/cb/96b8819e5b00b16352e7851c76b259
+Dec.-19 02:08:46.274 [Task submitter] INFO  nextflow.Session - [cb/96b881] Submitted process > NFCORE_BACASS:BACASS:NANOPLOT (TestMe)
+Dec.-19 02:08:46.392 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_BACASS:BACASS:PORECHOP_PORECHOP (TestMe) > jobId: 36529964; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/98/af4bf52579e7708255f64ace39498f
+Dec.-19 02:08:46.393 [Task submitter] INFO  nextflow.Session - [98/af4bf5] Submitted process > NFCORE_BACASS:BACASS:PORECHOP_PORECHOP (TestMe)
+Dec.-19 02:13:48.078 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[jobId: 36529961; id: 1; name: NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/10/68d6df57bd082bfb78d3843d619b04 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529962; id: 2; name: NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (minikraken2_v2_8GB_201904_UPDATE); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/d9/c023658e326b8544e1af79574aa8b8 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529963; id: 4; name: NFCORE_BACASS:BACASS:NANOPLOT (TestMe); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/cb/96b8819e5b00b16352e7851c76b259 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529964; id: 3; name: NFCORE_BACASS:BACASS:PORECHOP_PORECHOP (TestMe); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/98/af4bf52579e7708255f64ace39498f started: -; exited: -; ]
+Dec.-19 02:18:48.099 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[jobId: 36529961; id: 1; name: NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/10/68d6df57bd082bfb78d3843d619b04 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529962; id: 2; name: NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (minikraken2_v2_8GB_201904_UPDATE); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/d9/c023658e326b8544e1af79574aa8b8 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529963; id: 4; name: NFCORE_BACASS:BACASS:NANOPLOT (TestMe); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/cb/96b8819e5b00b16352e7851c76b259 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529964; id: 3; name: NFCORE_BACASS:BACASS:PORECHOP_PORECHOP (TestMe); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/98/af4bf52579e7708255f64ace39498f started: -; exited: -; ]
+Dec.-19 02:23:48.117 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 4 -- submitted tasks are shown below
+~> TaskHandler[jobId: 36529961; id: 1; name: NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/10/68d6df57bd082bfb78d3843d619b04 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529962; id: 2; name: NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (minikraken2_v2_8GB_201904_UPDATE); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/d9/c023658e326b8544e1af79574aa8b8 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529963; id: 4; name: NFCORE_BACASS:BACASS:NANOPLOT (TestMe); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/cb/96b8819e5b00b16352e7851c76b259 started: -; exited: -; ]
+~> TaskHandler[jobId: 36529964; id: 3; name: NFCORE_BACASS:BACASS:PORECHOP_PORECHOP (TestMe); status: SUBMITTED; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/98/af4bf52579e7708255f64ace39498f started: -; exited: -; ]
+Dec.-19 02:26:38.127 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 36529962; id: 2; name: NFCORE_BACASS:BACASS:KRAKEN2_DB_PREPARATION (minikraken2_v2_8GB_201904_UPDATE); status: COMPLETED; exit: 0; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/d9/c023658e326b8544e1af79574aa8b8 started: 1734564373124; exited: 2024-12-18T23:26:37.704260188Z; ]
+Dec.-19 02:26:38.128 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=120; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Dec.-19 02:26:53.220 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 36529963; id: 4; name: NFCORE_BACASS:BACASS:NANOPLOT (TestMe); status: COMPLETED; exit: 0; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/cb/96b8819e5b00b16352e7851c76b259 started: 1734564388124; exited: 2024-12-18T23:26:48.435035452Z; ]
+Dec.-19 02:26:53.266 [TaskFinalizer-2] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=120; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Dec.-19 02:27:58.130 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 36529964; id: 3; name: NFCORE_BACASS:BACASS:PORECHOP_PORECHOP (TestMe); status: COMPLETED; exit: 0; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/98/af4bf52579e7708255f64ace39498f started: 1734564403124; exited: 2024-12-18T23:27:56.802201755Z; ]
+Dec.-19 02:27:58.161 [Actor Thread 39] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/mulled-v2-5799ab18b5fc681e75923b2450abaa969907ec98:87fc08d11968d081f3e8a37131c1f1f6715b6542-0; path=/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/singularity/depot.galaxyproject.org-singularity-mulled-v2-5799ab18b5fc681e75923b2450abaa969907ec98-87fc08d11968d081f3e8a37131c1f1f6715b6542-0.img
+Dec.-19 02:27:58.169 [Actor Thread 39] WARN  nextflow.container.SingularityCache - Singularity cache directory has not been defined -- Remote image will be stored in the path: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+Dec.-19 02:27:58.172 [Actor Thread 39] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/canu:2.2--ha47f30e_0 [cache /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/singularity/depot.galaxyproject.org-singularity-canu-2.2--ha47f30e_0.img]
+Dec.-19 02:27:58.303 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_BACASS:BACASS:KRAKEN2_LONG (TestMe) > jobId: 36530058; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/a5/52c382e4d72c9c28431b2ddde44091
+Dec.-19 02:27:58.304 [Task submitter] INFO  nextflow.Session - [a5/52c382] Submitted process > NFCORE_BACASS:BACASS:KRAKEN2_LONG (TestMe)
+Dec.-19 02:28:03.133 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 36530058; id: 5; name: NFCORE_BACASS:BACASS:KRAKEN2_LONG (TestMe); status: COMPLETED; exit: 71; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/a5/52c382e4d72c9c28431b2ddde44091 started: 1734564483129; exited: 2024-12-18T23:28:01.834380809Z; ]
+Dec.-19 02:28:03.142 [TaskFinalizer-4] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BACASS:BACASS:KRAKEN2_LONG (TestMe); work-dir=/ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/a5/52c382e4d72c9c28431b2ddde44091
+  error [nextflow.exception.ProcessFailedException]: Process `NFCORE_BACASS:BACASS:KRAKEN2_LONG (TestMe)` terminated with an error exit status (71)
+Dec.-19 02:28:03.187 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'NFCORE_BACASS:BACASS:KRAKEN2_LONG (TestMe)'
+
+Caused by:
+  Process `NFCORE_BACASS:BACASS:KRAKEN2_LONG (TestMe)` terminated with an error exit status (71)
+
+
+Command executed:
+
+  kraken2 \
+      --db database \
+      --threads 4 \
+      --report TestMe.kraken2.report.txt \
+      --gzip-compressed \
+       \
+       \
+      --output /dev/null \
+       \
+       \
+      TestMe.porechop.fastq.gz
+  
+  
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_BACASS:BACASS:KRAKEN2_LONG":
+      kraken2: $(echo $(kraken2 --version 2>&1) | sed 's/^.*Kraken version //; s/ .*$//')
+      pigz: $( pigz --version 2>&1 | sed 's/pigz //g' )
+  END_VERSIONS
+
+Command exit status:
+  71
+
+Command output:
+  (empty)
+
+Command error:
+  INFO:    Converting SIF file to temporary sandbox...
+  Loading database information...classify: Error reading in hash table
+  INFO:    Cleaning up image...
+
+Work dir:
+  /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/a5/52c382e4d72c9c28431b2ddde44091
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Dec.-19 02:28:03.191 [TaskFinalizer-4] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Dec.-19 02:28:03.214 [TaskFinalizer-4] ERROR nextflow.Nextflow - Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+Dec.-19 02:28:03.215 [main] DEBUG nextflow.Session - Session await > all processes finished
+Dec.-19 02:28:03.217 [Actor Thread 14] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+Dec.-19 02:28:03.217 [Actor Thread 25] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BACASS:BACASS:CANU; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Dec.-19 02:28:03.224 [Actor Thread 30] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 4; slices: 1; internal sort time: 0.006 s; external sort time: 0.002 s; total time: 0.008 s
+Dec.-19 02:28:03.229 [Actor Thread 30] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/collect-file/09d414b0acd915211b9b3f7bf6f6a923
+Dec.-19 02:28:03.231 [Actor Thread 30] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-10818931599828790542
+Dec.-19 02:28:48.219 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 36529961; id: 1; name: NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz); status: RUNNING; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/10/68d6df57bd082bfb78d3843d619b04 started: 1734564368123; exited: -; ]
+Dec.-19 02:33:48.236 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor slurm > tasks to be completed: 1 -- submitted tasks are shown below
+~> TaskHandler[jobId: 36529961; id: 1; name: NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz); status: RUNNING; exit: -; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/10/68d6df57bd082bfb78d3843d619b04 started: 1734564368123; exited: -; ]
+Dec.-19 02:35:38.243 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 36529961; id: 1; name: NFCORE_BACASS:BACASS:KMERFINDER_SUBWORKFLOW:UNTAR (bacteria.tar.gz); status: COMPLETED; exit: 0; error: -; workDir: /ibex/user/pampum/2024-11-26_KSA-lib-ONT-assemblies/work/10/68d6df57bd082bfb78d3843d619b04 started: 1734564368123; exited: 2024-12-18T23:35:36.01943728Z; ]
+Dec.-19 02:35:38.244 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Dec.-19 02:35:38.245 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Dec.-19 02:35:38.260 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Dec.-19 02:35:38.262 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Dec.-19 02:35:38.277 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/bacass][0;31m Pipeline completed with errors[0m-
+Dec.-19 02:35:38.285 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=16m 18s; failedDuration=16ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=7; peakMemory=33 GB; ]
+Dec.-19 02:35:38.285 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Dec.-19 02:35:38.288 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Dec.-19 02:35:38.901 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Dec.-19 02:35:39.228 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Dec.-19 02:35:39.265 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.1.1'
+Dec.-19 02:35:39.266 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Dec.-19 02:35:39.267 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Dec.-19 02:35:39.268 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
