@@ -1,3 +1,3 @@
-# nf-logs-share
+# raw-files-share
 
-This is where I host nextflow log files for sharing
+This is where I host small files for easy sharing
