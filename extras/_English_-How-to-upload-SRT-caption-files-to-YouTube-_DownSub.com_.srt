@@ -1,0 +1,170 @@
+1
+00:00:00,834 --> 00:00:03,837
+So you've got
+your SRT file with your accurate captions.
+
+2
+00:00:03,920 --> 00:00:06,489
+Awesome.
+Now let's get that uploaded to YouTube.
+
+3
+00:00:06,489 --> 00:00:10,910
+On your YouTube channel, on the left
+hand side, click "Content,"
+
+4
+00:00:11,761 --> 00:00:14,514
+then scroll to the video
+you want to upload the captions to
+
+5
+00:00:15,932 --> 00:00:18,918
+and click "Details."
+So this little pencil icon.
+
+6
+00:00:20,336 --> 00:00:24,257
+On the left hand
+side, click "Subtitles." Now
+
+7
+00:00:24,257 --> 00:00:27,260
+these captions you're seeing are the auto
+generated ones that YouTube made.
+
+8
+00:00:27,777 --> 00:00:28,678
+Those are no good.
+
+9
+00:00:28,678 --> 00:00:31,231
+"Add language." Choose your language.
+
+10
+00:00:32,215 --> 00:00:35,101
+I'm a stickler for detail,
+so I'll say "English (United States)."
+
+11
+00:00:36,152 --> 00:00:38,038
+Under subtitles here...
+
+12
+00:00:38,038 --> 00:00:39,723
+click "Add."
+
+13
+00:00:41,324 --> 00:00:43,359
+"Upload file."
+
+14
+00:00:44,310 --> 00:00:46,446
+"With timing" is very important.
+
+15
+00:00:46,446 --> 00:00:49,182
+So when it asks you to select
+subtitle file type,
+
+16
+00:00:49,532 --> 00:00:51,851
+"With timing." "Continue."
+
+17
+00:00:53,253 --> 00:00:55,572
+Go to wherever you have the SRT file
+
+18
+00:00:55,839 --> 00:00:57,507
+and say Open.
+
+19
+00:00:59,142 --> 00:01:00,193
+And there it is.
+
+20
+00:01:00,193 --> 00:01:02,412
+It'll give you a preview window
+here so you can get a...
+
+21
+00:01:03,696 --> 00:01:05,482
+Just to
+make sure things are looking good here.
+
+22
+00:01:05,482 --> 00:01:06,850
+So let's hit play.
+
+23
+00:01:08,401 --> 00:01:10,203
+[Today we're taking a look at the
+
+24
+00:01:10,320 --> 00:01:12,489
+HPRC 6300 hard case.
+
+25
+00:01:12,489 --> 00:01:13,773
+I've been meaning to do this for a while.
+
+26
+00:01:13,773 --> 00:01:15,358
+I haven't gotten to it just yet.
+
+27
+00:01:15,358 --> 00:01:19,379
+It is like magic because it's
+got the SRT file, all the accurate
+
+28
+00:01:19,379 --> 00:01:22,115
+captions, it's got the timing,
+so you don't have to worry about that.
+
+29
+00:01:22,649 --> 00:01:23,950
+So that's really it.
+
+30
+00:01:23,950 --> 00:01:26,886
+Now you go up to here, say "Publish."
+
+31
+00:01:27,620 --> 00:01:28,221
+And you're good to go.
+
+32
+00:01:28,221 --> 00:01:31,040
+You can go back to the video.
+
+33
+00:01:31,040 --> 00:01:35,411
+In the lower right
+hand corner, the CC icon.
+
+34
+00:01:35,428 --> 00:01:36,446
+Click that.
+
+35
+00:01:37,197 --> 00:01:38,148
+There you go.
+
+36
+00:01:38,665 --> 00:01:41,401
+It is now live for the world
+to see with accurate captions.
+
+37
+00:01:41,868 --> 00:01:42,919
+Hopefully that helped you guys.
+
+38
+00:01:42,919 --> 00:01:44,003
+Thanks so much for watching.
+
+39
+00:01:44,003 --> 00:01:46,739
+I'll see you next time.
